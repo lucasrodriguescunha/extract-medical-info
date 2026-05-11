@@ -60,4 +60,11 @@ for index, row in df.iterrows():
 
 df_structured = pd.DataFrame(results)
 
+df_structured.rename(columns={
+    'age': 'idade',
+    'recommended_treatment': 'tratamento_recomendado',
+    'icd_code': 'codigo_cid',
+    'medical_specialty': 'especialidade_medica'
+}, inplace=True)
+
 print(df_structured.to_string())

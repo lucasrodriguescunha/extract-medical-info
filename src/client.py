@@ -28,7 +28,8 @@ function_definition.append({
                 'icd_code': {
                     'type': 'string'
                 }
-            }
+            },
+            'required': ['age', 'recommended_treatment', 'icd_code']
         }
     }
 })
@@ -59,4 +60,4 @@ for index, row in df.iterrows():
 
 df_structured = pd.DataFrame(results)
 
-print(df_structured.head())
+print(df_structured.to_string())

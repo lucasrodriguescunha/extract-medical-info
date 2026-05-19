@@ -4,6 +4,7 @@
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![dotenv](https://img.shields.io/badge/dotenv-ECD53F?style=for-the-badge&logo=dotenv&logoColor=black)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 
 ---
 
@@ -43,6 +44,14 @@ export OPENAI_API_KEY=sua_chave_aqui
 ```bash
 python src/client.py
 ```
+
+### Testes
+
+```bash
+python -m pytest tests/ -v
+```
+
+Testes usam mocks do OpenAI — sem consumo de API key.
 
 ### Dados
 
@@ -91,6 +100,14 @@ export OPENAI_API_KEY=your_key_here
 ```bash
 python src/client.py
 ```
+
+### Tests
+
+```bash
+python -m pytest tests/ -v
+```
+
+Tests mock OpenAI — no API key consumed.
 
 ### Data
 
